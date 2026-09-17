@@ -6,7 +6,7 @@ workflow to triage, assign, and resolve them.
 
 ---  
 
-## New Advanced Features (v2)
+# New Advanced Features (v2)
 
 Five features were added on top of the original system, without changing the existing complaint
 workflow, tech stack, or data that already existed:
