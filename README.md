@@ -76,7 +76,7 @@ Complaints are considered similar when they share the same **category** and **lo
 not yet `RESOLVED`. The count feeds directly into the prioritization engine and is shown on the
 complaint detail page, with a "Potential Duplicate" flag at 3+ similar complaints.
 
-### Analytics Dashboard
+### Analytics Dashboard 
 - Summary cards: total, new, assigned, in progress, resolved, unresolved, SLA breached
 - Issue distribution by category (pie chart)
 - Unresolved complaints table
