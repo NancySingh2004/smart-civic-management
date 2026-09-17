@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  background-color: #F5F6F9;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #1B2130;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #C7CCD6;
+  border-radius: 8px;
+}
+
+:focus-visible {
+  outline: 2px solid #2C4A78;
+  outline-offset: 2px;
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-md bg-civic-slate px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-civic-navy disabled:cursor-not-allowed disabled:opacity-60;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-md border border-civic-border bg-white px-5 py-2.5 text-sm font-semibold text-civic-ink transition-colors hover:border-civic-slate hover:text-civic-slate;
+  }
+  .btn-gold {
+    @apply inline-flex items-center justify-center gap-2 rounded-md bg-civic-gold px-5 py-2.5 text-sm font-semibold text-civic-navy transition-colors hover:bg-civic-goldLight;
+  }
+  .card {
+    @apply rounded-xl border border-civic-border bg-white shadow-card;
+  }
+  .input-field {
+    @apply w-full rounded-md border border-civic-border bg-white px-3.5 py-2.5 text-sm text-civic-ink placeholder:text-civic-muted focus:border-civic-slate focus:outline-none focus:ring-2 focus:ring-civic-slate/20;
+  }
+  .label-text {
+    @apply mb-1.5 block text-sm font-medium text-civic-ink;
+  }
+}

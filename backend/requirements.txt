@@ -1,0 +1,18 @@
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+motor==3.5.1
+pymongo==4.8.0
+pydantic==2.9.2
+python-dotenv==1.0.1
+
+# Required by FastAPI to parse multipart/form-data (used by complaint
+# submission, which accepts an optional photo alongside the form fields).
+python-multipart==0.0.9
+
+# Optional: only needed for the AI Complaint Understanding feature if you
+# use the Anthropic fallback provider. The recommended (free) provider is
+# Groq, which needs no extra package -- it's called via the standard library.
+# The app starts and runs fine without this installed and without either
+# GROQ_API_KEY or ANTHROPIC_API_KEY set -- AI analysis simply reports itself
+# as unavailable.
+anthropic==0.39.0
