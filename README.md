@@ -4,7 +4,7 @@ A full-stack municipal operations platform that lets citizens report civic issue
 garbage, streetlights, water supply, etc.) and gives municipal staff a smart, transparent
 workflow to triage, assign, and resolve them.
 
---- 
+---  
 
 ## New Advanced Features (v2)
 
